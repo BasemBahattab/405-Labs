@@ -1,0 +1,36 @@
+/*
+    LAB-3
+    Basem Bahattab - 1935470
+*/
+
+body {
+    background-color: rgb(127, 127, 128);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    border-top: 20px solid black;
+    border-left: 20px solid red;
+    border-right: 20px solid yellow;
+    border-bottom: 20px solid green;
+}
+
+.logo img:hover {
+    background-color: black;
+    transition: all 0.5s ease 0s;
+}
+
+.spans {
+    display: flex;
+    justify-content: center;
+}
+
+span:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    transition: all 1s ease 0s;
+}
