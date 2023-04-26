@@ -6,6 +6,7 @@ Can be filtered with
     - Search (which filter the name of resturant)
     - Select type (Which filter the type of food)
 
-you can find the result in JSFIDDLE
+you can find the result in JSFIDDLE:
+https://jsfiddle.net/Basem_Bahattab/oka81xyc/4/
 
 
