@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Resturant in Jeddah</title>
+</head>
+
+<body>
+    <script src="index.js"></script>
+    <div class="all-content">
+        <nav>
+            <input type="text" id="searchBox" onkeyup="filterSearch()" placeholder="Search for Resturant" title="Type in a Resturant.">
+            <select class="select_type" onchange="filterBySelect()">
+                <option selected="" value="SelectType">Select your type</option>
+                <option value="Saudi Food">Saudi Food</option>
+                <option value="Egyptian Food">Egyptian Food</option>
+                <option value="Labanese Food">Labanese Food</option>
+                <option value="Indian Food">Indian Food</option>
+            </select>
+        </nav>
+        <div class="tables">
+            <div id="saudi-table">
+                <h3>Saudi food</h3>
+                <table id="Saudi-food">
+                    <thead>
+                        <tr>
+                            <th>Resturant name</th>
+                            <th>Located</th>
+                            <th>Review</th>
+                            <th>Click me</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Aseel</td>
+                            <td>Al-Khalidiyah Dist</td>
+                            <td>3.8 Stars</td>
+                            <td><a href="https://goo.gl/maps/QUEPD9vYDxRo6uKy8">Click me</a></td>
+                        </tr>
+                        <tr>
+                            <td>Jareesh Cuisine</td>
+                            <td>Al-Basateen Dist</td>
+                            <td>4.1 Stars</td>
+                            <td><a href="https://goo.gl/maps/oa32TW4DdhfmCmvj8">Click me</a></td>
+                        </tr>
+                        <tr>
+                            <td>Deera Cafe</td>
+                            <td>Stars Avenue Mall</td>
+                            <td>3.9 Stars</td>
+                            <td><a href="https://goo.gl/maps/X4R3RkRny4kaiwz58">Click me</a></td>
+                        </tr>
+                        <tr>
+                            <td>Eash Bellaham</td>
+                            <td>Al-Salamah Dist</td>
+                            <td>3.9 Stars</td>
+                            <td><a href="https://goo.gl/maps/m8ctbSuJwDR4mJHw7">Click me</a></td>
+                        </tr>
+                        <tr>
+                            <td>F6or Faris</td>
+                            <td>Al-Andalus Dist</td>
+                            <td>3.6 Stars</td>
+                            <td><a href="https://goo.gl/maps/vJeg5nf9eRXtu5rB8">Click me</a></td>
+                        </tr>
+                        <tr>
+                            <td>Abu Zaid</td>
+                            <td>Al-Sharfya Dist</td>
+                            <td>4.1 Stars</td>
+                            <td><a href="https://goo.gl/maps/G2qpFNADA2BaBWuL7">Click me</a></td>
+                        </tr>
+                        <tr>
+                            <td>Ridan</td>
+                            <td>Al-Safa Dist</td>
+                            <td>3.8 Stars</td>
+                            <td><a href="https://goo.gl/maps/JNVWXXjhgHEcv7BG7">Click me</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br>
+            <div id="egyptian-table">
+                <h3>Egyptian food</h3>
+                <table id="Egyptian-food">
+                    <thead>
+                        <tr>
+                            <th>Resturant name</th>
+                            <th>Located</th>
+                            <th>Review</th>
+                            <th>Click me map</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>AL Dawar AL Masry</td>
+                            <td>Al-Shati Dist</td>
+                            <td>3.5 Stars</td>
+                            <td><a href="https://goo.gl/maps/Azj6xY2CvD3PtWWU8">Click me</a></td>
+                        </tr>
+                        <tr>
+                            <td>Egyptian BBQ</td>
+                            <td>University Street</td>
+                            <td>3.9 Stars</td>
+                            <td><a href="https://goo.gl/maps/Nknpdz98UeNiLtfF7">Click me</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br>
+            <div id="labanese-table">
+
+                <h3>Labanese food</h3>
+                <table id="Labanese-food">
+                    <thead>
+                        <tr>
+                            <th>Resturant name</th>
+                            <th>Located</th>
+                            <th>Review</th>
+                            <th>Click me map</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Al-Thawwaqah</td>
+                            <td>Al-Tahlyah Dist</td>
+                            <td>3.7 Stars</td>
+                            <td><a href="https://goo.gl/maps/jdB2YPFzSVi6ksHC6">Click me</a></td>
+                        </tr>
+                        <tr>
+                            <td>Sonoubra</td>
+                            <td>Sary Street</td>
+                            <td> Stars</td>
+                            <td><a href="">Click me</a></td>
+                        </tr>
+                        <tr>
+                            <td>Palm Peach</td>
+                            <td>Al-Khaldiah Dist</td>
+                            <td>4.1 Stars</td>
+                            <td><a href="https://goo.gl/maps/j8YmNQ3oypx8CD5M9">Click me</a></td>
+                        </tr>
+                        <tr>
+                            <td>Byblos</td>
+                            <td>Al-Hamra District</td>
+                            <td>3.5 Stars</td>
+                            <td><a href="https://goo.gl/maps/B4edSVmC2hdckxZ88">Click me</a></td>
+                        </tr>
+                        <tr>
+                            <td>Reem Albawadi</td>
+                            <td>Al-Rawdah Dist</td>
+                            <td>3.7 Stars</td>
+                            <td><a href="https://goo.gl/maps/i2Ed8uC8PYdgoedeA">Click me</a></td>
+                        </tr>
+                        <tr>
+                            <td>Semsom</td>
+                            <td>Al-Khalidiyah District</td>
+                            <td>3.25 Stars</td>
+                            <td><a href="https://goo.gl/maps/NHfXtyQHCPpLShNg8">Click me</a></td>
+                        </tr>
+                        <tr>
+                            <td>Shami</td>
+                            <td>Al-Hamra District </td>
+                            <td>3.2 Stars</td>
+                            <td><a href="https://goo.gl/maps/4euRDKWHq65TF9pS9">Click me</a></td>
+                        </tr>
+                        <tr>
+                            <td>Assi</td>
+                            <td>Al-Faisaliah District </td>
+                            <td>3.6 Stars</td>
+                            <td><a href="https://goo.gl/maps/4euRDKWHq65TF9pS9">Click me</a></td>
+                        </tr>
+                        <tr>
+                            <td>Ghanouj</td>
+                            <td>Al-Shati District</td>
+                            <td>3.7 Stars</td>
+                            <td><a href="https://goo.gl/maps/UmdJLA5rbHrMeegu5">Click me</a></td>
+                        </tr>
+                        <tr>
+                            <td>Goodies</td>
+                            <td>Al-Zahra District</td>
+                            <td>4 Stars</td>
+                            <td><a href="https://goo.gl/maps/t4YQzHXr6EuJNQWZ9">Click me</a></td>
+                        </tr>
+                        <tr>
+                            <td>Cuisine Halwani</td>
+                            <td>Al Andalus Dist</td>
+                            <td>4 Stars</td>
+                            <td><a href="https://goo.gl/maps/cyEuKGqfdj2gCEXK7">Click me</a></td>
+                        </tr>
+                        <tr>
+                            <td>La Mer</td>
+                            <td>Roshana Mall</td>
+                            <td>3 Stars</td>
+                            <td><a href="https://goo.gl/maps/TLGrRSjXjBf9Q9oy7">Click me</a></td>
+                        </tr>
+                        <tr>
+                            <td>Labeeb</td>
+                            <td>Thalia Street</td>
+                            <td>4 Stars</td>
+                            <td><a
+                                    href="https://www.Click me.com/maps/place/%D9%84%D8%A8%D9%8A%D8%A8%E2%80%AD/@21.5496045,39.1619103,18z/data=!4m9!1m2!2m1!1z2YXYt9i52YUg2YTYqNmK2Kg!3m5!1s0x15c3d00463f78b8b:0x862cdeca48d7090d!8m2!3d21.5496167!4d39.1624274!16s%2Fg%2F11ckkyzq_k">Click
+                                    me</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ahwak</td>
+                            <td>Al-Zahra Dist</td>
+                            <td>4.4 Stars</td>
+                            <td><a href="https://goo.gl/maps/imMQVsGeQ3F1g2zM6">Click me</a></td>
+                        </tr>
+                        <tr>
+                            <td>Al-Mashrabiyah</td>
+                            <td>Radisson SAS Hotel</td>
+                            <td>2.1 Stars</td>
+                            <td><a href="https://goo.gl/maps/EX94MWT5gL42Qdmb7">Click me</a></td>
+                        </tr>
+                        <tr>
+                            <td>Leila</td>
+                            <td>Al-Rawdah Dist</td>
+                            <td>4.1 Stars</td>
+                            <td><a href="https://goo.gl/maps/JFxqr97m8hBxDRKMA">Click me</a></td>
+                        </tr>
+                        <tr>
+                            <td>Yildizlar</td>
+                            <td>Al-Hamraa Dist</td>
+                            <td>3.8 Stars</td>
+                            <td><a href="https://goo.gl/maps/EphqV1AbwkB9nDgU6">Click me</a></td>
+                        </tr>
+                        <tr>
+                            <td>Yonine</td>
+                            <td>al Zahraa District</td>
+                            <td>4.1 Stars</td>
+                            <td><a href="https://goo.gl/maps/sTVQbAyspGEBLm3N6">Click me</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br>
+            <h3>Indian food</h3>
+            <div id="indian-table">
+                <table id="Indian-food">
+                    <thead>
+                        <tr>
+                            <th>Resturant name</th>
+                            <th>Located</th>
+                            <th>Review</th>
+                            <th>Click me map</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Punjab Grill</td>
+                            <td>Al-Zahra Dist</td>
+                            <td>4.6 Stars</td>
+                            <td><a href="https://goo.gl/maps/WsiJMwM8NfRuewHV7">Click me</a></td>
+                        </tr>
+                        <tr>
+                            <td>India Gate</td>
+                            <td>East Baghdadiyah District</td>
+                            <td>3.9 Stars</td>
+                            <td><a href="https://goo.gl/maps/4eJx9d1rpqnPd6cy9">Click me</a></td>
+                        </tr>
+                        <tr>
+                            <td>Taj Mahal</td>
+                            <td>Al Khalidiya District</td>
+                            <td>3.5 Stars</td>
+                            <td><a href="https://goo.gl/maps/kvAcdj37wt6xMarM6">Click me</a></td>
+                        </tr>
+                        <tr>
+                            <td>Raj</td>
+                            <td>Prince Mohammed bin Abdulaziz Road</td>
+                            <td>3.6 Stars</td>
+                            <td><a href="https://goo.gl/maps/kBEitAmNemDY2RBU6">Click me</a></td>
+                        </tr>
+                        <tr>
+                            <td>Zaika</td>
+                            <td>Al-Rawda Dist</td>
+                            <td>4 Stars</td>
+                            <td><a href="https://goo.gl/maps/r5C5dXHJeEsumQZ77">Click me</a></td>
+                        </tr>
+                        <tr>
+                            <td>Shahrazd</td>
+                            <td>Al Faisaliah District</td>
+                            <td>4.1 Stars</td>
+                            <td><a href="https://goo.gl/maps/nRcSgN6HYdMjHLyH8">Click me</a></td>
+                        </tr>
+                        <tr>
+                            <td>Shezan</td>
+                            <td>Al Salama District</td>
+                            <td>3.6 Stars</td>
+                            <td><a href="https://goo.gl/maps/QRJN7K3yakN8PSnLA">Click me</a></td>
+                        </tr>
+                        <tr>
+                            <td>the Ocean</td>
+                            <td>Al-Hamra Dist</td>
+                            <td>3.9 Stars</td>
+                            <td><a href="https://goo.gl/maps/oVTQL6gQwkMC4xCD7">Click me</a></td>
+                        </tr>
+                        <tr>
+                            <td>Taj </td>
+                            <td>Al Aziziyah District</td>
+                            <td>3.6 Stars</td>
+                            <td><a href="https://goo.gl/maps/vgPVAKgS17xDVcdY6">Click me</a></td>
+                        </tr>
+                        <tr>
+                            <td>Shaheen</td>
+                            <td>Bani Malik District</td>
+                            <td>4 Stars</td>
+                            <td><a href="https://goo.gl/maps/pF2HqxT32SaieuZr9">Click me</a></td>
+                        </tr>
+                        <tr>
+                            <td>Mehraja</td>
+                            <td>Al-Hamraa District</td>
+                            <td>3.7 Stars</td>
+                            <td><a href="https://goo.gl/maps/MnaH488uAkdCAsBr6">Click me</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer>
+    <h4>Mouse and Keyboard Events in JavaScript</h4>
+    <h4>The data brought from <a 
+            href="https://www.jeddah.gov.sa/english/directories/SubCategories/Details/index.php?id=29">Jeddah.gov.sa</a>
+    </h4>
+</footer>
+
+</html>
