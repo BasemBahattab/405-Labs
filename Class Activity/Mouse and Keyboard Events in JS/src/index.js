@@ -1,14 +1,13 @@
 function filterSearch() {
     let input = document.getElementById("searchBox");
     let word = input.value.toLowerCase();
-
-    let qureySaudi = document.querySelectorAll(".Saudi-food");
-
-    for (table of qureySaudi) {
+    
+    let allTables = document.querySelectorAll(".tables");
+    
+    for (table of allTables) {
         let row = document.querySelectorAll("tbody tr");
         Filter(row, 0, word);
     }
-
 }
 
 function filterBySelect() {
@@ -54,7 +53,6 @@ function filterBySelect() {
 }
 
 function Filter(row, column, word) {
-    let count = 0;
     for (let i = 0; i < row.length; i++) {
         let td = row[i].getElementsByTagName("td")[column];
         let text = td.innerText;
