@@ -1,0 +1,102 @@
+<!-- Basem Bahattab -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lab-5</title>
+</head>
+
+<body>
+    <div class="all-content">
+        <!-- Display my name button -->
+        <div class="name-display">
+            <input type="button" value="Created by" onclick="alertMsg()">
+        </div>
+        <!-- //Display my name button -->
+
+
+        <!-- Math side  -->
+        <!-- This will implement the basic math and factorial by display the results by JS  -->
+        <script src="index.js"></script>
+        <div class="math">
+            <div class="input-basic-math">
+                <!-- input numbers  -->
+                <h3 class="headers">Type 2 number here you want to calculate</h3>
+                <h4>Number 1#</h4>
+                <input type="number" name="num1" class="number1">
+                <h4>Number 2#</h4>
+                <input type="number" name="num2" class="number2">
+                <!-- //input numbers  -->
+            </div>
+
+            <div class="button-basic-math">
+                <!-- Basic math buttons -->
+                <input type="button" value="Sum" onclick="sum()">
+                <input type="button" value="minus" onclick="minus()">
+                <input type="button" value="multiply" onclick="multiply()">
+                <input type="button" value="division" onclick="division()">
+                <!-- //Basic math buttons -->
+            </div>
+            <div class="result">
+                <!-- Results of basic math -->
+                <h3>Result:</h3>
+                <p id="display-1">0</p>
+                <p id="result-1">0</p>
+                <!-- //Results of basic math -->
+            </div>
+
+            <div class="input-factorial">
+                <!-- Factorial buttons -->
+                <h3 class="headers">Factorial</h3>
+                <input type="number" name="factorial" class="factorial1">
+                <br>
+                <input type="button" value="factorial" onclick="factorial()">
+                <!-- //Factorial buttons -->
+            </div>
+
+            <div class="result">
+                <!-- Factorial Display result -->
+                <h3>Result:</h3>
+                <p id="display-2-1">factorial(0)</p>
+                <p id="display-2-2"></p>
+                <p id="result-2">0</p>
+                <!-- //Factorial Display result -->
+            </div>
+        </div>
+        <!-- //Math side  -->
+
+        <!-- OOP Side -->
+        <script src="oop.js"></script>
+        <div class="oop-side">
+            <div class="input-oop">
+                <!-- Input first name, last name, year of birth and button to create-->
+                <h3 class="headers">Person creater using - OOP</h3>
+                <h3 class="texts">First name:</h3>
+                <input type="text" name="first-name" id="first-name">
+                <h3 class="texts">Last name:</h3>
+                <input type="text" name="last-name" id="last-name">
+                <h3 class="texts">Year of Birth:</h3>
+                <input type="number" name="year_of_birth" id="year_of_birth" min="1900" max="2023">
+                <br>
+                <input type="button" value="Create" onclick="createNewPerson()">
+                <!-- //Input first name, last name and year of birth-->
+            </div>
+            <div class="display-person-created">
+                <!-- Display person class -->
+                <h3 class="headers">Person profile</h3>
+                <h3>Full name: <span id="person-full-name"></span></h3>
+                <h3>Year of Birth: <span id="person-YBirth"></span></h3>
+                <h3>Age: <span id="person-age"></span></h3>
+                <!-- //Display person class -->
+            </div>
+        </div>
+        <!-- //OOP Side -->
+    </div>
+</body>
+
+</html>
