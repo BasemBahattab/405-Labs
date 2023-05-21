@@ -1,0 +1,29 @@
+body {
+    padding: 0;
+    margin: 1;
+    background-color: rgb(179, 177, 177);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    gap: 0.2rem;
+}
+
+#album{
+    font-size: 24px;
+    font-weight: 300;
+    border-radius: 2px;
+    margin: 0;
+    border: 1px solid black;
+    width: 500px;
+    background: rgb(226, 225, 225);
+    text-align: center;
+    font-weight: bold;
+}
+
+button {
+    height: 33px;
+    width: 300px;
+    font-size: 20px;
+}
