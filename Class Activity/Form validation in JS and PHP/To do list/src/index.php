@@ -54,7 +54,7 @@
               <button type="submit" class="btn" name="mark_done_btn">Mark as done</button>
               <button type="submit" class="btn" name="mark_all_done_btn">Mark all done</button>
            </div>
-           <?php get_done_todos();?>
+           <?php get_all_todos();?>
         </form>
     </div>
   </body>

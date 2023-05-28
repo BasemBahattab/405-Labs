@@ -26,7 +26,7 @@
         <form method="post" id="addForm" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
            <input type="text" name="new_task" id="new-item" placeholder="A new item..." />
            <button name="add_btn" id="add-btn">Add</button>
-           <?php get_all_todos();?>
+           <?php get_done_todos();?>
         </form>
     </div>
   </body>
